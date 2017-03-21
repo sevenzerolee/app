@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
 <title>Index</title>
 
 <link rel="stylesheet" href="./script/jquery_mobile_1_4_5/jquery.mobile-1.4.5.min.css" />
@@ -17,12 +19,16 @@
 	</div>
 
 	<!-- /content -->
-	<div role="main" class="ui-content">
+	<div role="main" class="ui-content" >
 		<p>Page content goes here.</p>
 		<div>
 			<a href="sms:">Launch Messages App</a>
 			<hr />
-			<a href="sms:1-408-555-1212">New SMS Message</a>
+			<a href="sms:14085551212">New SMS Message</a>
+			<hr />
+			<a href="tel:">Launch Tel App</a>
+			<hr />
+			<a href="tel:14085551212">New Tel</a>
 		</div>
 	</div>
 
@@ -34,6 +40,23 @@
 
 <script src="./script/jquery_1_12_4/jquery-1.12.4.min.js"></script>
 <script src="./script/jquery_mobile_1_4_5/jquery.mobile-1.4.5.min.js"></script>
+
+<script>
+
+function testHello() {
+	// console.log("Hello");
+	// alert("Hello");
+	window.location = "sms:14085551212";
+}
+
+setTimeout('testHello()', 200);
+
+$(document).ready(function(){
+
+   console.log("JQuery Mobile ");
+
+});
+</script>
 
 </body>
 </html>
